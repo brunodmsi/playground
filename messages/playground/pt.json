@@ -1,5 +1,17 @@
 {
 	"Playground": {
-		"header": "Essa é uma página direcionada à agrupar alguns projetos que fiz com o objetivo de estudar/praticar alguns conceito"
+		"header": "Essa é uma página direcionada à agrupar alguns projetos que fiz com o objetivo de estudar/praticar alguns conceitos",
+		"smartTextarea": {
+			"title": "Textarea inteligente",
+			"description": "Textarea que nem o do twitter: quantos caracteres escreveu, a representação de porcentagem em relação ao limite, avisos sobre estar perto do limite ou se passou dele, e mais..."
+		},
+		"progressBar": {
+			"title": "Barra de Progresso",
+			"description": "Em alguns sites (principalmente de leitura), você consegue observar que existe um componente que vai se preenchendo de acordo com que você abaixa a tela. Este componente busca repetir o mesmo comportamento."
+		},
+		"multiStepForm": {
+			"title": "Formulários com múltiplos passos",
+			"description": "Simulação de página de cadastro com múltiplas etapas como: informações pessoais, endereço e outros dados"
+		}
 	}
 }

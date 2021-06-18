@@ -1,5 +1,17 @@
 {
 	"Playground": {
-		"header": "This is a page aimed at grouping some projects I've done in order to study/practice some concepts"
+		"header": "This is a page aimed at grouping some projects I've done in order to study/practice some concepts",
+		"smartTextarea": {
+			"title": "Smart Textarea",
+			"description": "Textarea just like the twitter one: how many characters you wrote, the representation of the percentage in relation to the limit (240 chars), warnings about being close to the limit or having passed it, and more..."
+		},
+		"progressBar": {
+			"title": "Progress Bar",
+			"description": "In some websites (mainly reading ones) you can see that there is a component that fills up as you lower the screen. This component seeks to repeat the same behavior."
+		},
+		"multiStepForm": {
+			"title": "Multi-Step form",
+			"description": "Simulation of registration page with multiple steps such as: personal information, address and other data"
+		}
 	}
 }

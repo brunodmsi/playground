@@ -14,33 +14,20 @@ export default function Home() {
 			<div className={styles.projects}>
 				<Link href="/smart-textarea" passHref>
 					<div className={styles.project}>
-						<h4>Textarea inteligente</h4>
-						<span>
-							Textarea que nem o do twitter: quantos caracteres escreveu
-							a representação de porcentagem em relação ao limite,
-							avisos sobre estar perto do limite ou se passou dele, enfim...
-						</span>
+						<h4>{t('smartTextarea.title')}</h4>
+						<span>{t('smartTextarea.description')}</span>
 					</div>
 				</Link>
 				<Link href="/progress-bar" passHref>
 					<div className={styles.project}>
-						<h4>Barra de Progresso</h4>
-						<span>
-							Em alguns sites (principalmente de leitura), você consegue
-							observar que existe um componente que vai se preenchendo
-							de acordo com que você abaixa a tela. Este componente busca repetir
-							o mesmo comportamento.
-						</span>
+						<h4>{t('progressBar.title')}</h4>
+						<span>{t('progressBar.description')}</span>
 					</div>
 				</Link>
 				<Link href="/multistep-form" passHref>
 					<div className={styles.project}>
-						<h4>Formulário com múltiplas etapas</h4>
-						<span>
-							Simulação de página de cadastro
-							com múltiplas etapas como: informações pessoais,
-							endereço e outros dados
-						</span>
+						<h4>{t('multiStepForm.title')}</h4>
+						<span>{t('multiStepForm.description')}</span>
 					</div>
 				</Link>
 			</div>
