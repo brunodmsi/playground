@@ -13,8 +13,7 @@ interface LayoutProps {
 }
 
 export function Layout({ children }: LayoutProps) {
-	const { locale, locales, route } = useRouter();
-	console.log(locales);
+	const { route } = useRouter();
 
 	return (
 		<div className={styles.wrapper}>
