@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import styles from './index.module.scss';
@@ -6,7 +6,16 @@ import styles from './index.module.scss';
 const MAX_INPUT_SIZE = 120;
 const WARNING_ZONE_TRESHOLD = 10;
 
-export function SmartTextarea() {
+type Post = {
+	text: string;
+	createdAt: Date,
+}
+
+interface SmartTextareaProps {
+	onSubmit: (post: Post) => void;
+}
+
+export function SmartTextarea({ onSubmit }: SmartTextareaProps) {
 	const [text, setText] = useState('');
 
 	const isDisabled = useMemo(() => text.length > MAX_INPUT_SIZE, [text]);
@@ -14,7 +23,18 @@ export function SmartTextarea() {
 		MAX_INPUT_SIZE - WARNING_ZONE_TRESHOLD <= text.length &&
 		text.length <= MAX_INPUT_SIZE,
 		[text]
-	)
+	);
+
+	function handleSubmit() {
+		const data = {
+			text,
+			createdAt: new Date()
+		}
+
+		onSubmit(data);
+
+		setText('');
+	}
 
 	return (
 		<div className={styles.container}>
@@ -54,6 +74,7 @@ export function SmartTextarea() {
 				<button
 					className={styles.postButton}
 					disabled={isDisabled}
+					onClick={handleSubmit}
 				>
 					Postar
 				</button>

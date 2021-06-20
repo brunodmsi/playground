@@ -3,3 +3,25 @@
 	margin: 0 auto;
 	padding-top: 2rem;
 }
+
+.posts {
+	display: flex;
+	margin-top: 3rem;
+	flex-direction: column;
+
+	> div {
+		& + div {
+			margin-top: 1.5rem;
+		}
+
+		line-height: 1.125rem;
+
+		p {
+			font-size: 18px;
+		}
+
+		span {
+			font-size: 12px;
+		}
+	}
+}
