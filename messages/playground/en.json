@@ -7,7 +7,7 @@
 		},
 		"progressBar": {
 			"title": "Progress Bar",
-			"description": "In some websites (mainly reading ones) you can see that there is a component that fills up as you lower the screen. This component seeks to repeat the same behavior."
+			"description": "In some websites (mainly reading ones) you can see that there is a component that fills up as you lower the screen. This component seeks to repeat the same behavior. Also includes another static progress bars with possibility of passing a value as ref"
 		},
 		"multiStepForm": {
 			"title": "Multi-Step form",
