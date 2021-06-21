@@ -5,6 +5,23 @@
 	position: relative;
 }
 
+.goBackButton {
+	position: fixed;
+	margin-left: auto;
+	margin-right: auto;
+	left: 20px;
+	bottom: 20px;
+	text-align: center;
+	border: none;
+	display: flex;
+	align-items: center;
+	font-size: 1.5rem;
+
+	svg {
+		margin-right: 1rem;
+	}
+}
+
 .i18n {
 	position: fixed;
 	margin-left: auto;

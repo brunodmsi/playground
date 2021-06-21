@@ -39,7 +39,8 @@ export function getStaticProps({ locale }: GetStaticPropsContext) {
 	return {
 		props: {
 			messages: {
-				...require(`../messages/playground/${locale}.json`)
+				...require(`../messages/playground/${locale}.json`),
+				...require(`../messages/general/${locale}.json`)
 			}
 		}
 	}

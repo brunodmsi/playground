@@ -6,6 +6,7 @@ import { Layout } from '../components/Layout';
 import '../styles/global.scss';
 
 function MyApp({ Component, pageProps }: AppProps) {
+	console.log(pageProps.messages)
   return (
 		<NextIntlProvider
 			messages={pageProps.messages}
