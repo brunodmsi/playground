@@ -1,4 +1,40 @@
-.container {
-
+.circleBg {
+	fill: none;
 }
 
+.circle {
+	display: block;
+	margin: 20px auto;
+	max-width: 100%;
+}
+
+.circleSvg {
+	fill: none;
+}
+
+.circleText {
+	font-size: 2rem;
+	text-anchor: middle;
+	font-weight: bold;
+}
+
+.lineContainer {
+	height: 20px;
+	width: 100%;
+	background-color: #e0e0de;
+	border-radius: 10px;
+	margin: 50px;
+}
+
+.lineFiller {
+	height: 100%;
+	border-radius: inherit;
+	text-align: right;
+	transition: width 850ms ease-in-out;
+}
+
+.lineLabel {
+	padding: 5px;
+	color: var(--white);
+	font-weight: bold;
+}

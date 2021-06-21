@@ -7,7 +7,10 @@
 		},
 		"progressBar": {
 			"title": "Barra de Progresso",
-			"description": "Em alguns sites (principalmente de leitura), você consegue observar que existe um componente que vai se preenchendo de acordo com que você abaixa a tela. Este componente busca repetir o mesmo comportamento. Inclui também outros estaticos com possibilidade de passar um valor de referencia."
+			"description": "Em alguns sites (principalmente de leitura), você consegue observar que existe um componente que vai se preenchendo de acordo com que você abaixa a tela. Este componente busca repetir o mesmo comportamento. Inclui também outros estaticos com possibilidade de passar um valor de referencia.",
+			"introduction": "Abaixo você pode ver visualizadores de progresso em formato circular e também em barra. No slider abaixo você pode modificar o valor que será mostrado.",
+			"circle": "Circular",
+			"line": "Linha"
 		},
 		"multiStepForm": {
 			"title": "Formulários com múltiplos passos",

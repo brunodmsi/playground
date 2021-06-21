@@ -1,22 +1,38 @@
 import { GetStaticPropsContext } from 'next';
 import { useTranslations } from 'next-intl';
-import { createRef } from 'react';
+import { createRef, useState } from 'react';
 
-import { ProgressBar } from '../components/ProgressBar';
+import { ProgressBar, CircleProgressBar } from '../components/ProgressBar';
 import { ReadingProgress } from '../components/ReadingProgress';
 import styles from './progress-bar.module.scss';
 
 export default function ProgressBarPage() {
 	const t = useTranslations();
 	const target = createRef<HTMLDivElement>();
+	const [sliderValue, setSliderValue] = useState(50);
 
 	return (
 		<div ref={target} className={styles.container}>
 			<ReadingProgress target={target} />
 			<h4>{t('Playground.progressBar.title')}</h4>
 			<span>{t('Playground.progressBar.description')}</span>
+			<br /><br />
+			<p>{t('Playground.progressBar.introduction')}</p>
 
-			{/* <ProgressBar value={9} type="circle" /> */}
+			<label htmlFor="slider">{sliderValue}%</label>
+			<input
+				id="slider"
+				type="range"
+				defaultValue={sliderValue}
+				onChange={e => setSliderValue(Number(e.currentTarget.value))}
+			/>
+
+			<br /><br />
+			<h4>{t('Playground.progressBar.circle')}</h4>
+			<CircleProgressBar value={sliderValue} size={150} />
+			<br /><br />
+			<h4>{t('Playground.progressBar.line')}</h4>
+			<ProgressBar value={sliderValue} />
 
 			<br /><br />
 

@@ -7,7 +7,10 @@
 		},
 		"progressBar": {
 			"title": "Progress Bar",
-			"description": "In some websites (mainly reading ones) you can see that there is a component that fills up as you lower the screen. This component seeks to repeat the same behavior. Also includes another static progress bars with possibility of passing a value as ref"
+			"description": "In some websites (mainly reading ones) you can see that there is a component that fills up as you lower the screen. This component seeks to repeat the same behavior. Also includes another static progress bars with possibility of passing a value as ref",
+			"introduction": "Below you can see visualizations of progress in circular and bar formats. In the slider below you can modify the shown value.",
+			"circle": "Circular",
+			"line": "Line"
 		},
 		"multiStepForm": {
 			"title": "Multi-Step form",
